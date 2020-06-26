@@ -21,3 +21,25 @@ C:\Users\Hikmet Bey\Desktop\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\
 C:\Users\Hikmet Bey\Desktop\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmRandevuListesi.resources
 C:\Users\Hikmet Bey\Desktop\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmSekreterGiris.resources
 C:\Users\Hikmet Bey\Desktop\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmSekreterDetay.resources
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.csprojAssemblyReference.cache
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmBilgiDuzenle.resources
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmBrans.resources
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmDoktorBilgiDuzenle.resources
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmDoktorDetay.resources
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmDoktorGiris.resources
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmDoktorPaneli.resources
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmDuyurular.resources
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmGirisler.resources
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmHastaDetay.resources
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmHastaGiris.resources
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmHastaKayit.resources
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmRandevuListesi.resources
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmSekreterGiris.resources
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.FrmSekreterDetay.resources
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.Properties.Resources.resources
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.csproj.GenerateResource.cache
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.exe
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\obj\Debug\Hastane_Projesi_2018.pdb
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\bin\Debug\Hastane_Projesi_2018.exe.config
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\bin\Debug\Hastane_Projesi_2018.exe
+D:\formattaSonra\Hastane_Projesi_2018\Hastane_Projesi_2018\bin\Debug\Hastane_Projesi_2018.pdb

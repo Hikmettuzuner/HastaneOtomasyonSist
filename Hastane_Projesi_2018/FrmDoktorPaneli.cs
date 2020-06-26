@@ -22,14 +22,17 @@ namespace Hastane_Projesi_2018
         private void FrmDoktorPaneli_Load(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Doktorlar",bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Doktorlar", bgl.baglanti());
             da.Fill(dt);
             dataGridView1.DataSource = dt;
 
-            SqlCommand kmt = new SqlCommand("Select BransAd From Tbl_Branslar",bgl.baglanti());
+            SqlCommand kmt = new SqlCommand("Select BransAd From Tbl_Branslar", bgl.baglanti());
             SqlDataReader dr2 = kmt.ExecuteReader();
             while (dr2.Read())
+            {
                 CmbBrans.Items.Add(dr2[0].ToString());
+
+            }
         }
 
         private void BtnEkle_Click(object sender, EventArgs e)
@@ -58,8 +61,8 @@ namespace Hastane_Projesi_2018
 
         private void BtnSil_Click(object sender, EventArgs e)
         {
-            SqlCommand komut3 = new SqlCommand("Delete  From Tbl_Doktorlar Where DoktorTC=@f1",bgl.baglanti());
-            komut3.Parameters.AddWithValue("@f1",MskTC.Text);
+            SqlCommand komut3 = new SqlCommand("Delete  From Tbl_Doktorlar Where DoktorTC=@f1", bgl.baglanti());
+            komut3.Parameters.AddWithValue("@f1", MskTC.Text);
             komut3.ExecuteNonQuery();
             bgl.baglanti().Close();
             FrmDoktorPaneli fr = new FrmDoktorPaneli();
@@ -70,7 +73,7 @@ namespace Hastane_Projesi_2018
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
         {
-            SqlCommand komut4 = new SqlCommand("Update Tbl_Doktorlar Set DoktorAd=@m1,DoktorSoyad=@m2,DoktorBrans=@m3,DoktorSifre=@m5 Where DoktorTC=@p4",bgl.baglanti());
+            SqlCommand komut4 = new SqlCommand("Update Tbl_Doktorlar Set DoktorAd=@m1,DoktorSoyad=@m2,DoktorBrans=@m3,DoktorSifre=@m5 Where DoktorTC=@m4", bgl.baglanti());
             komut4.Parameters.AddWithValue("@m1", TxtAd.Text);
             komut4.Parameters.AddWithValue("@m2", TxtSoyad.Text);
             komut4.Parameters.AddWithValue("@m3", CmbBrans.Text);

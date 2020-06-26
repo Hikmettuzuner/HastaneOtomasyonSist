@@ -28,7 +28,7 @@ namespace Hastane_Projesi_2018
 
             //AdSoyad Çekme
 
-            SqlCommand komut = new SqlCommand("Select SekreterAdSoyad From Tbl_Sekreter Where SekreterTC=@p1", bgl.baglanti());
+            SqlCommand komut = new SqlCommand("Select SekreterAdSoyad From Tbl_Sekreterler Where SekreterTC=@p1", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", LblTC.Text);
             SqlDataReader dr = komut.ExecuteReader();
             while (dr.Read())
@@ -97,6 +97,24 @@ namespace Hastane_Projesi_2018
         private void BtnDoktorPanel_Click(object sender, EventArgs e)
         {
             FrmDoktorPaneli frm = new FrmDoktorPaneli();
+            frm.Show();
+        }
+
+        private void BtnListe_Click(object sender, EventArgs e)
+        {
+            FrmDuyurular frm = new FrmDuyurular();
+            frm.Show();
+        }
+
+        private void BtnBransPanel_Click(object sender, EventArgs e)
+        {
+            FrmBrans frm = new FrmBrans();
+            frm.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmRandevuListesi frm = new FrmRandevuListesi();
             frm.Show();
         }
     }

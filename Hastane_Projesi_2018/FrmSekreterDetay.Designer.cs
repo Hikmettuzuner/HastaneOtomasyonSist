@@ -39,16 +39,12 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BtnGuncelle = new System.Windows.Forms.Button();
             this.BtnKaydet = new System.Windows.Forms.Button();
-            this.ChkDurum = new System.Windows.Forms.CheckBox();
-            this.MskTC = new System.Windows.Forms.MaskedTextBox();
             this.CmbDoktor = new System.Windows.Forms.ComboBox();
             this.CmbBrans = new System.Windows.Forms.ComboBox();
             this.MskSaat = new System.Windows.Forms.MaskedTextBox();
             this.MskTarih = new System.Windows.Forms.MaskedTextBox();
             this.Txtid = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -61,6 +57,7 @@
             this.BtnListe = new System.Windows.Forms.Button();
             this.BtnBransPanel = new System.Windows.Forms.Button();
             this.BtnDoktorPanel = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -157,16 +154,12 @@
             // 
             this.groupBox3.Controls.Add(this.BtnGuncelle);
             this.groupBox3.Controls.Add(this.BtnKaydet);
-            this.groupBox3.Controls.Add(this.ChkDurum);
-            this.groupBox3.Controls.Add(this.MskTC);
             this.groupBox3.Controls.Add(this.CmbDoktor);
             this.groupBox3.Controls.Add(this.CmbBrans);
             this.groupBox3.Controls.Add(this.MskSaat);
             this.groupBox3.Controls.Add(this.MskTarih);
             this.groupBox3.Controls.Add(this.Txtid);
-            this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label5);
@@ -196,25 +189,6 @@
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.UseVisualStyleBackColor = true;
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
-            // 
-            // ChkDurum
-            // 
-            this.ChkDurum.AutoSize = true;
-            this.ChkDurum.Location = new System.Drawing.Point(148, 346);
-            this.ChkDurum.Name = "ChkDurum";
-            this.ChkDurum.Size = new System.Drawing.Size(92, 29);
-            this.ChkDurum.TabIndex = 21;
-            this.ChkDurum.Text = "Durum";
-            this.ChkDurum.UseVisualStyleBackColor = true;
-            // 
-            // MskTC
-            // 
-            this.MskTC.Location = new System.Drawing.Point(148, 290);
-            this.MskTC.Mask = "00000000000";
-            this.MskTC.Name = "MskTC";
-            this.MskTC.Size = new System.Drawing.Size(137, 30);
-            this.MskTC.TabIndex = 29;
-            this.MskTC.ValidatingType = typeof(int);
             // 
             // CmbDoktor
             // 
@@ -253,20 +227,11 @@
             // 
             // Txtid
             // 
+            this.Txtid.Enabled = false;
             this.Txtid.Location = new System.Drawing.Point(148, 43);
             this.Txtid.Name = "Txtid";
             this.Txtid.Size = new System.Drawing.Size(137, 30);
             this.Txtid.TabIndex = 21;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(35, 347);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 25);
-            this.label9.TabIndex = 27;
-            this.label9.Text = "Durum =";
             // 
             // label2
             // 
@@ -277,16 +242,6 @@
             this.label2.Size = new System.Drawing.Size(58, 25);
             this.label2.TabIndex = 21;
             this.label2.Text = "ID  = ";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(60, 295);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 25);
-            this.label8.TabIndex = 26;
-            this.label8.Text = "TC  =";
             // 
             // label4
             // 
@@ -345,6 +300,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 26);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(518, 197);
             this.dataGridView1.TabIndex = 0;
@@ -366,6 +322,7 @@
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 26);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(518, 246);
             this.dataGridView2.TabIndex = 0;
@@ -388,8 +345,9 @@
             this.BtnListe.Name = "BtnListe";
             this.BtnListe.Size = new System.Drawing.Size(195, 44);
             this.BtnListe.TabIndex = 23;
-            this.BtnListe.Text = "Randevu Listesi";
+            this.BtnListe.Text = "Duyuru Listesi";
             this.BtnListe.UseVisualStyleBackColor = true;
+            this.BtnListe.Click += new System.EventHandler(this.BtnListe_Click);
             // 
             // BtnBransPanel
             // 
@@ -399,6 +357,7 @@
             this.BtnBransPanel.TabIndex = 22;
             this.BtnBransPanel.Text = "Branş Paneli";
             this.BtnBransPanel.UseVisualStyleBackColor = true;
+            this.BtnBransPanel.Click += new System.EventHandler(this.BtnBransPanel_Click);
             // 
             // BtnDoktorPanel
             // 
@@ -410,12 +369,23 @@
             this.BtnDoktorPanel.UseVisualStyleBackColor = true;
             this.BtnDoktorPanel.Click += new System.EventHandler(this.BtnDoktorPanel_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(823, 590);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(195, 44);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Randevu Listesi";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmSekreterDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1292, 655);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -457,15 +427,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox Txtid;
         private System.Windows.Forms.MaskedTextBox MskTarih;
         private System.Windows.Forms.MaskedTextBox MskSaat;
         private System.Windows.Forms.ComboBox CmbBrans;
         private System.Windows.Forms.ComboBox CmbDoktor;
-        private System.Windows.Forms.MaskedTextBox MskTC;
-        private System.Windows.Forms.CheckBox ChkDurum;
         private System.Windows.Forms.Button BtnGuncelle;
         private System.Windows.Forms.Button BtnKaydet;
         private System.Windows.Forms.GroupBox groupBox4;
@@ -476,5 +442,6 @@
         private System.Windows.Forms.Button BtnListe;
         private System.Windows.Forms.Button BtnBransPanel;
         private System.Windows.Forms.Button BtnDoktorPanel;
+        private System.Windows.Forms.Button button1;
     }
 }

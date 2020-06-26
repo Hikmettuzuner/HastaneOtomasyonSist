@@ -34,6 +34,8 @@
             this.LblTC = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Txtid = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.LnkBilgiDuzenle = new System.Windows.Forms.LinkLabel();
             this.BtnRandevuAl = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -46,8 +48,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Txtid = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -127,6 +127,23 @@
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Paneli";
+            // 
+            // Txtid
+            // 
+            this.Txtid.Enabled = false;
+            this.Txtid.Location = new System.Drawing.Point(156, 29);
+            this.Txtid.Name = "Txtid";
+            this.Txtid.Size = new System.Drawing.Size(225, 30);
+            this.Txtid.TabIndex = 25;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(93, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 25);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Id =";
             // 
             // LnkBilgiDuzenle
             // 
@@ -220,6 +237,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 26);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(603, 254);
             this.dataGridView1.TabIndex = 0;
@@ -240,25 +258,11 @@
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 26);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(606, 294);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(93, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 25);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Id =";
-            // 
-            // Txtid
-            // 
-            this.Txtid.Location = new System.Drawing.Point(156, 29);
-            this.Txtid.Name = "Txtid";
-            this.Txtid.Size = new System.Drawing.Size(225, 30);
-            this.Txtid.TabIndex = 25;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
             // FrmHastaDetay
             // 

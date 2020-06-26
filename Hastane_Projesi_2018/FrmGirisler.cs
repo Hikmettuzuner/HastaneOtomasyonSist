@@ -21,7 +21,9 @@ namespace Hastane_Projesi_2018
         {
            
         }
-
+        //Tabındex kontrolü yap (sırayla textleriniçinde gezer) ,autosizemode yap tüm formlarda(GrowandShrink Formlarda büyütmemekiçin)
+        //MaximizeBox False yapki form düzgün olsun büyüklüğü
+        //Formda Tek button var ise AcceptButtondan butonu seç(enter'a basıldığında işler direk)
         private void BtnHastaGirisi_Click(object sender, EventArgs e)
         {
             FrmHastaGiris fr = new FrmHastaGiris();
